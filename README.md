@@ -6,7 +6,7 @@ Add the following text snippet into a file like ~/.bash_profile or ~/.zshrc.
 
 ```
 function sls() {
-  docker run --rm -it --volume=$PWD:/workspace -v ~/.aws/credentials:/root/.aws/credentials serverless:1.32.0 serverless "$@"
+  docker run --rm -it --volume=$PWD:/workspace -v ~/.aws/credentials:/root/.aws/credentials gfichtner/docker-serverless:latest serverless "$@"
 }
 ```
 
